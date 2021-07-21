@@ -1,17 +1,13 @@
-import "lit-html";
-import "@lit/reactive-element";
-export * from "lit-element/lit-element.js";
-
-export * as locallize from "@lit/localize";
-
-import * as labsMotion from "@lit-labs/motion";
-import * as labsReact from "@lit-labs/react";
-import * as labsSSRClient from "@lit-labs/ssr-client";
-import * as labsTask from "@lit-labs/task";
-
-export const labs = {
-  motion: labsMotion,
-  react: labsReact,
-  ssrClient: labsSSRClient,
-  task: labsTask,
-};
+export * from "lit";
+export { asyncAppend } from "lit/directives/async-append.js";
+export { asyncReplace } from "lit/directives/async-replace.js";
+export { cache } from "lit/directives/cache.js";
+export { classMap } from "lit/directives/class-map.js";
+export { guard } from "lit/directives/guard.js";
+export { ifDefined } from "lit/directives/if-defined.js";
+export { live } from "lit/directives/live.js";
+export { ref } from "lit/directives/ref.js";
+export { repeat } from "lit/directives/repeat.js";
+export { styleMap } from "lit/directives/style-map.js";
+export { templateContent } from "lit/directives/template-content.js";
+export { until } from "lit/directives/until.js";
