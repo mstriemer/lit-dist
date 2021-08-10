@@ -1,8 +1,8 @@
 
 /**
- * This file is vendored from https://github.com/mstriemer/lit-dist/blob/custom-export/dist/lit.all.js.
- * If changes are required, they happen in import_all.js in that repo and then `npm run build` and
- * the following change is made (which should get automated if we keep using this):
+ * This file is vendored from https://github.com/mstriemer/lit-dist/blob/custom-export/mozdist/lit.all.js.
+ * If changes are required, they happen in import_all.js in that repo and then `moz-build-helper.sh` and
+ * the following change is made (which is now automated):
  *
  * There is an innerHTML usage which does not work with our sanitization of
  * innerHTML. When updating this file that needs to be changed to the following
