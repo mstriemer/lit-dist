@@ -1,0 +1,20 @@
+
+/**
+ * This file is vendored from https://github.com/mstriemer/lit-dist/blob/custom-export/mozdist/lit.all.js.
+ * If changes are required, they happen in import_all.js in that repo and then `moz-build-helper.sh` and
+ * the following change is made (which is now automated):
+ *
+ * There is an innerHTML usage which does not work with our sanitization of
+ * innerHTML. When updating this file that needs to be changed to the following
+ * (in static createElement currently a member of U):
+ *
+ * static createElement(t,e){
+ *   const parser = new DOMParser();
+ *   const doc = parser.parseFromString(
+ *     `<template>${t}</template>`,
+ *     "text/html"
+ *   );
+ *   let i = document.importNode(doc.querySelector("template"), true);
+ *   return i;
+ * }
+ */
